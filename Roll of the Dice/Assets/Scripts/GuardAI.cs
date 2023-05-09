@@ -16,6 +16,7 @@ public class GuardAI : MonoBehaviour
     //public float walkPointRange;
     public float sightRange;
     public bool playerInSightRange;
+    public GameObject caughtIcon;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class GuardAI : MonoBehaviour
         {
             agent.Stop();
             transform.LookAt(player);
+            caughtIcon.SetActive(true);
             Debug.Log("Player in range");
         }
     }
