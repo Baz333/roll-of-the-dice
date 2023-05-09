@@ -26,13 +26,17 @@ public class GuardAI : MonoBehaviour
     private void Update()
     {
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        if(!playerInSightRange )
+        if(!playerInSightRange)
         {
             Patrol();
-        } /*else
+            Debug.Log("Player not in range");
+        } 
+        else
         {
+            agent.Stop();
             transform.LookAt(player);
-        }*/
+            Debug.Log("Player in range");
+        }
     }
 
     private void Patrol()
