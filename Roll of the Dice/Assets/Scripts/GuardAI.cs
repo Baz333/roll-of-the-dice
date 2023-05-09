@@ -29,7 +29,10 @@ public class GuardAI : MonoBehaviour
         if(!playerInSightRange )
         {
             Patrol();
-        }
+        } /*else
+        {
+            transform.LookAt(player);
+        }*/
     }
 
     private void Patrol()
