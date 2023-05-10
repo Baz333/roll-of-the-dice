@@ -30,7 +30,6 @@ public class GuardAI : MonoBehaviour
         if(!playerInSightRange)
         {
             Patrol();
-            Debug.Log("Player not in range");
         } 
         else
         {
