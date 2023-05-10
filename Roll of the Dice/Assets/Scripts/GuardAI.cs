@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class GuardAI : MonoBehaviour
 {
@@ -17,11 +18,16 @@ public class GuardAI : MonoBehaviour
     public float sightRange;
     public bool playerInSightRange;
     public GameObject caughtIcon;
+    public AudioClip alertSound;
+    private AudioSource source;
+    public Collider playerCollider;
+    public GameObject caughtCutscene;
 
     private void Awake()
     {
         player = GameObject.Find("PlayerCapsule").transform;
         agent = GetComponent<NavMeshAgent>();
+        source = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -30,13 +36,26 @@ public class GuardAI : MonoBehaviour
         if(!playerInSightRange)
         {
             Patrol();
-        } 
+        }/* 
         else
         {
             agent.Stop();
             transform.LookAt(player);
+            source.PlayOneShot(alertSound, 1f);
             caughtIcon.SetActive(true);
             Debug.Log("Player in range");
+        }*/
+    }
+
+    void OnTriggerEnter(Collider other) 
+    {
+        if (other == playerCollider)
+        {
+            agent.Stop();
+            transform.LookAt(player);
+            source.PlayOneShot(alertSound, 0.5f);
+            caughtIcon.SetActive(true);
+            StartCoroutine(Restart());
         }
     }
 
@@ -76,6 +95,14 @@ public class GuardAI : MonoBehaviour
         {
             walkPointSet = true;
         }*/
+    }
+
+    IEnumerator Restart()
+    {
+        yield return new WaitForSeconds(1f);
+        caughtCutscene.SetActive(true);
+        yield return new WaitForSeconds(4.9f);
+        SceneManager.LoadScene("Level 1");
     }
 
 }

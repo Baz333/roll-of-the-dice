@@ -28,6 +28,9 @@ namespace StarterAssets
 		public float Gravity = -15.0f;
 
 		[Space(10)]
+		public ParticleSystem footsteps;
+
+		[Space(10)]
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
 		public float JumpTimeout = 0.1f;
 		[Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
@@ -122,7 +125,20 @@ namespace StarterAssets
 			CameraRotation();
 		}
 
-		private void GroundedCheck()
+        private void StartFootsteps()
+        {
+            if (!footsteps.isPlaying)
+            {
+                footsteps.Play();
+            }
+        }
+
+        private void StopFootsteps()
+        {
+            footsteps.Stop();
+        }
+
+        private void GroundedCheck()
 		{
 			// set sphere position, with offset
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
@@ -192,6 +208,10 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+				StartFootsteps();
+			} else
+			{
+				StopFootsteps();
 			}
 
 			// move the player
