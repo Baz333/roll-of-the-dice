@@ -661,7 +661,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 05a8f545dea46a54cbcbf2e3ec4e3fae, type: 2}
+  - {fileID: 2100000, guid: 748545bde2e01bb4ba3d40b378567b8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1679,6 +1679,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5393215578589016655, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6111acb1834819b4f9f92170e65b989c, type: 2}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: MoveSpeed
       value: 5
@@ -8874,6 +8878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515826024940956291, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748545bde2e01bb4ba3d40b378567b8c, type: 2}
     - target: {fileID: 4515826024940956302, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: m_Name
       value: Guard Roundabout Right
@@ -12577,6 +12585,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515826024940956291, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748545bde2e01bb4ba3d40b378567b8c, type: 2}
     - target: {fileID: 4515826024940956302, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: m_Name
       value: Guard Dead End RIght
@@ -15021,6 +15033,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515826024940956291, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748545bde2e01bb4ba3d40b378567b8c, type: 2}
     - target: {fileID: 4515826024940956302, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: m_Name
       value: Guard Roundabout Left
@@ -15431,6 +15447,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4515826024940956291, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 748545bde2e01bb4ba3d40b378567b8c, type: 2}
     - target: {fileID: 4515826024940956302, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: m_Name
       value: Guard Two Paths
