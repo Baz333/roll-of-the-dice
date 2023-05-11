@@ -3301,7 +3301,7 @@ PrefabInstance:
     - target: {fileID: -2593832297450991801, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f614816dcec4d394a9afdb36fb87da7c, type: 2}
+      objectReference: {fileID: 2100000, guid: 23223645c5af6b548a95743eae4f154f, type: 2}
     - target: {fileID: 919132149155446097, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Name
       value: safe_close (1)
@@ -3309,7 +3309,7 @@ PrefabInstance:
     - target: {fileID: 6804247995218511070, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f614816dcec4d394a9afdb36fb87da7c, type: 2}
+      objectReference: {fileID: 2100000, guid: 4ab1749f25256fe4983fdf6814b5eb2b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
 --- !u!1001 &1096743506
@@ -5020,7 +5020,7 @@ PrefabInstance:
     - target: {fileID: -2593832297450991801, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f614816dcec4d394a9afdb36fb87da7c, type: 2}
+      objectReference: {fileID: 2100000, guid: 23223645c5af6b548a95743eae4f154f, type: 2}
     - target: {fileID: 919132149155446097, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Name
       value: safe_close
@@ -5028,7 +5028,7 @@ PrefabInstance:
     - target: {fileID: 6804247995218511070, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f614816dcec4d394a9afdb36fb87da7c, type: 2}
+      objectReference: {fileID: 2100000, guid: 4ab1749f25256fe4983fdf6814b5eb2b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e42f5c4cb7fdb024e99c9001335d10b3, type: 3}
 --- !u!1 &1819125698
