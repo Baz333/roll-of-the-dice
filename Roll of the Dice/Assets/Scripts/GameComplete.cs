@@ -9,6 +9,8 @@ public class GameComplete : MonoBehaviour
     public GameObject money;
     public GameObject gameCompleteCutscene;
     public GameObject completeText;
+    public GameObject player;
+    public GameObject congratulationsText;
 
     void OnTriggerEnter(Collider other)
     {
@@ -20,7 +22,10 @@ public class GameComplete : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            player.SetActive(false);
             gameCompleteCutscene.SetActive(true);
+            completeText.SetActive(false);
+            congratulationsText.SetActive(true);
             StartCoroutine(SwitchScenes());
         }
     }

@@ -25,7 +25,9 @@ public class LevelComplete : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             levelCompleteCutscene.SetActive(true);
+            enterText.SetActive(false);
             StartCoroutine(SwitchScenes());
+
         }
     }
 

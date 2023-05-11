@@ -8886,6 +8886,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 6c4e1a0744546b44bb12a3f72337ff5f, type: 3}
     - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: sightRange
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: caughtCutscene
       value: 
       objectReference: {fileID: 1524905731}
@@ -10105,7 +10109,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1278013770
 GameObject:
@@ -12433,7 +12437,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597722118}
-  m_LocalRotation: {x: 0.16245985, y: 0.68819094, z: -0.16245985, w: 0.688191}
+  m_LocalRotation: {x: 0.16245982, y: 0.688191, z: -0.16245985, w: 0.68819094}
   m_LocalPosition: {x: 107.06379, y: 3.1404343, z: 87.97161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12596,6 +12600,10 @@ PrefabInstance:
       propertyPath: alertSound
       value: 
       objectReference: {fileID: 8300000, guid: 6c4e1a0744546b44bb12a3f72337ff5f, type: 3}
+    - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: sightRange
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: caughtCutscene
       value: 
@@ -13998,7 +14006,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1945147682
 GameObject:
@@ -14114,7 +14122,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1968992597
 GameObject:
@@ -14178,7 +14186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1976357360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15035,6 +15043,10 @@ PrefabInstance:
       propertyPath: alertSound
       value: 
       objectReference: {fileID: 8300000, guid: 6c4e1a0744546b44bb12a3f72337ff5f, type: 3}
+    - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
+      propertyPath: sightRange
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4515826024940956303, guid: dd7a3de2207544b47a3e218cd104cd27, type: 3}
       propertyPath: caughtCutscene
       value: 
