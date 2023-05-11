@@ -3,40 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelComplete : MonoBehaviour
+public class GameComplete : MonoBehaviour
 {
-    public GameObject levelCompleteCutscene;
-    public GameObject enterText;
 
-    /*void OnTriggerEnter(Collider other)
-    {
-        levelCompleteCutscene.SetActive(true);
-        //SceneManager.LoadScene("Menu");
-        StartCoroutine(SwitchScenes());
-    }*/
+    public GameObject money;
+    public GameObject gameCompleteCutscene;
+    public GameObject completeText;
 
     void OnTriggerEnter(Collider other)
     {
-        enterText.SetActive(true);
+        money.SetActive(true); 
+        completeText.SetActive(true);
     }
 
     void OnTriggerStay(Collider other)
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            levelCompleteCutscene.SetActive(true);
+            gameCompleteCutscene.SetActive(true);
             StartCoroutine(SwitchScenes());
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        enterText.SetActive(false);
+        completeText.SetActive(false);
     }
 
     IEnumerator SwitchScenes()
     {
         yield return new WaitForSeconds(3.3f);
-        SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("Menu");
     }
+
 }
