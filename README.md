@@ -1,4 +1,4 @@
-# roll-of-the-dice
+# Roll of the Dice
 By Barry Nolan and Liam Flynn
 This was a group project for the module Introduction to 3D Game Development
 
